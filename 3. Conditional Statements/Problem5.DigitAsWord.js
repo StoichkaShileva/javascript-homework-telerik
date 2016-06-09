@@ -2,50 +2,44 @@
 // Print “not a digit” in case of invalid input.
 // Use a switch statement.
 
-function digitAsWord(digit) {
-    switch (digit) {
-        case 0:
-            return 'zero';
-            break;
-        case 1:
-            return 'one';
-            break;
-        case 2:
-            return 'two';
-            break;
-        case 3:
-            return 'three';
-            break;
-        case 4:
-            return 'four';
-            break;
-        case 5:
-            return 'five';
-            break;
-        case 6:
-            return 'six';
-            break;
-        case 7:
-            return 'seven';
-            break;
-        case 8:
-            return 'eight';
-            break;
-        case 9:
-            return 'nine';
-            break;
-        default:
-            return 'not a digit';
-            break;
-    }
+// Paste the code below in the console of the browser in order to be able to enter a digit!
+
+var digit = Number(prompt('Please enter a digit between 0 and 9'));
+
+switch (digit) {
+    case 0:
+        console.log('zero');
+        break;
+    case 1:
+        console.log('one');
+        break;
+    case 2:
+        console.log('two');
+        break;
+    case 3:
+        console.log('three');
+        break;
+    case 4:
+        console.log('four');
+        break;
+    case 5:
+        console.log('five');
+        break;
+    case 6:
+        console.log('six');
+        break;
+    case 7:
+        console.log('seven');
+        break;
+    case 8:
+        console.log('eight');
+        break;
+    case 9:
+        console.log('nine');
+        break;
+    default:
+        console.log('not a digit');
+        break;
 }
 
-// Examples:
-console.log(digitAsWord(2));
-console.log(digitAsWord(1));
-console.log(digitAsWord(0));
-console.log(digitAsWord(5));
-console.log(digitAsWord(-0.1));
-console.log(digitAsWord('hi'));
-console.log(digitAsWord(9));
-console.log(digitAsWord(10));
+
