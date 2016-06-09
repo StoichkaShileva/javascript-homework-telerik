@@ -1,6 +1,9 @@
 // Write an expression that checks if given point P(x, y) is within a circle K({0,0}, 5).
 // {0,0} is the centre and 5 is the radius
 
+var circleCenter = 0,
+    circleRadius = 5;
+
 function pointInCircle(x, y) {
     x = Math.abs(x);
     y = Math.abs(y);
@@ -9,8 +12,6 @@ function pointInCircle(x, y) {
     }
     return false;
 }
-var circleCenter = 0,
-    circleRadius = 5;
 
 // Examples:
 console.log(pointInCircle(0, 1));

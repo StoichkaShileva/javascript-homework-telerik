@@ -5,12 +5,12 @@ function isPrime(number) {
     if (number <= 1) {
         return numberIsPrime;
     }
-    else if (number == 2) {
+    else if (number === 2) {
         numberIsPrime = true;
     }
     else {
         for (var i = 2; i < number; i++) {
-            if (number % i == 0) {
+            if (!(number % i)) {    // !(number % i) is the same as (number % i === 0)
                 numberIsPrime = false;
                 return numberIsPrime;
             }
