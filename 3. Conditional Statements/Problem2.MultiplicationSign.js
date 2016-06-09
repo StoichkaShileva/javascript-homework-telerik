@@ -2,7 +2,7 @@
 // Use a sequence of if operators.
 
 function productSign(a, b, c) {
-    if (a == 0 || b == 0 || c == 0) {
+    if (a === 0 || b === 0 || c === 0) {
         return "0";
     }
     else {
