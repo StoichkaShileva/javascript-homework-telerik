@@ -1,21 +1,14 @@
 // Write an expression that checks if given positive integer number n (n ≤ 100) is prime.
 
-var numberIsPrime = false;
-function isPrime(number) {
-    if (number <= 1) {
-        return numberIsPrime;
-    }
-    else if (number === 2) {
-        numberIsPrime = true;
+function isPrime(n) {
+    var numberIsPrime = true;
+    if (n <= 1) {
+        numberIsPrime = false;
     }
     else {
-        for (var i = 2; i < number; i++) {
-            if (!(number % i)) {    // !(number % i) is the same as (number % i === 0)
+        for (var i = 2; i <= Math.sqrt(n); i++) {
+            if (!(n % i)) {    // !(n % i) is the same as (n % i === 0)
                 numberIsPrime = false;
-                return numberIsPrime;
-            }
-            else {
-                numberIsPrime = true;
             }
         }
     }
