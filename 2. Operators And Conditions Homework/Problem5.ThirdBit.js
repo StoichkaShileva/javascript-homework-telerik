@@ -2,15 +2,18 @@
 // The bits are counted from right to left, starting from bit #0.
 // The result of the expression should be either 1 or 0.
 
-function createBinaryString(nMask) {  // Creates 32-bit binary string
-    for (var nFlag = 0, nShifted = nMask, sMask = ""; nFlag < 32;
-         nFlag++, sMask += String(nShifted >>> 31), nShifted <<= 1);
-    return sMask;
+function zeroPaddedBin(dec) {  // Creates 32-bit binary string
+    var bin = dec.toString(2);
+    while (bin.length < 32) {
+        bin = '0' + bin;
+    }
+    return bin;
 }
-function thirdDigit(decim) {
-    decim = createBinaryString(decim);
-    decim = decim.slice(-4);
-    if (decim.startsWith('0')) {
+
+function thirdDigit(dec) {
+    dec = zeroPaddedBin(dec);
+    dec = dec.slice(-4);
+    if (dec.startsWith('0')) {
         return '0';
     }
     return '1';
