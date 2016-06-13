@@ -14,14 +14,14 @@ function digitAsWord(number) {
     }
     else if (number >= 20 && number <= 99) {
         var firstDig = Math.floor(number / 10),
-            secondDig = number - (firstDig * 10);
+            secondDig = number % 10;
         return tens[firstDig] + '-' + digits[secondDig];
 
     }
     else if (number >= 100 && number <= 999) {
         firstDig = Math.floor(number / 100);
-        secondDig = Math.floor((number - firstDig * 100)/ 10);
-        var thirdDig = number - (firstDig * 100 + secondDig * 10);
+        secondDig = Math.floor((number % 100)/ 10);
+        var thirdDig = number % 10;
         if(secondDig > 1){
             return digits[firstDig] + ' ' + 'hundred' + ' ' + 'and' + ' ' + tens[secondDig] + '-' + digits[thirdDig];
         }
