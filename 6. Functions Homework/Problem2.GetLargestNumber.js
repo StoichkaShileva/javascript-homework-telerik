@@ -27,6 +27,6 @@ function printLargest(args) {
     console.log(GetMax(larger, c));
 }
 
-printLargest('8 3 6');
-printLargest('7 19 19');
-printLargest('7 12 15');
+printLargest(['8 3 6']);
+printLargest(['7 19 19']);
+printLargest(['7 12 15']);

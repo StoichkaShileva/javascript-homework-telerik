@@ -6,7 +6,10 @@
 
 function sayHello(name) {
     name = String(name);
-       console.log('Hello, ' + name + '!');
+    var greet = 'Hello, ',
+        exclam = '!';
+
+    console.log(greet + name + exclam);
 }
 
 sayHello(['Peter']);

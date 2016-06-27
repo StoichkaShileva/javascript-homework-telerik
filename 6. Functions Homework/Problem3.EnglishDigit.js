@@ -1,7 +1,7 @@
 // Write a function that returns the last digit of given integer as an English word.
 
-
 function digitAsWord(n) {
+    n = +n[0];
     var i,
         word,
         lastDigit,
@@ -15,5 +15,5 @@ function digitAsWord(n) {
 }
 
 // Examples:
-digitAsWord(512);
-digitAsWord(12309);
+digitAsWord(['512']);
+digitAsWord(['12309']);
