@@ -1,3 +1,3 @@
-# javascript-homework-telerik
+# Telerik Academy - JavaScript Fundamentals
 
-JavaScript Fundamentals Homework - Telerik Academy
+Homework for the course
